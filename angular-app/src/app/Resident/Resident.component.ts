@@ -143,14 +143,14 @@ export class ResidentComponent {
       .then(() => {           
         this.errorMessage = null;
         this.myForm.setValue({
-            "residentID":CEng,
-            "firstName":Civil,
-            "lastName":Engineering,
-            "coinsValue":100,
-            "energyValue":10,
-            "energyUnits":1,
-            "cashValue":1,
-            "cashCurrency":1
+            "residentID":null,
+            "firstName":null,
+            "lastName":null,
+            "coinsValue":null,
+            "energyValue":null,
+            "energyUnits":null,
+            "cashValue":null,
+            "cashCurrency":null
         });
       })
     .catch((error) => {
