@@ -4,9 +4,9 @@
 namespace org.decentralized.energy.network
 
 participant Resident identified by residentID {
-    o String residentID
-    o String firstName
-    o String lastName
+    o CE residentID
+    o Civil firstName
+    o Engineering lastName
     --> Coins coins
     --> Cash cash
     --> Energy energy
