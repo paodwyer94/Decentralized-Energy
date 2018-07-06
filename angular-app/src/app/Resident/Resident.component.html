@@ -169,11 +169,8 @@
           </tr>
         </thead>
         <tbody>
-
-          </tr>
           <tr *ngFor="let resident of allResidents">
           
-
                 <td>{{resident.residentID}}</td>
             
                 <td>{{resident.firstName}}</td>
@@ -190,7 +187,6 @@
 
                 <td>{{resident.cashCurrency}}</td>
            
-
             <td>
 
               <button (click)="getForm(resident.residentID);" type="button" class="btn btn-success" data-toggle="modal" data-target="#updateResidentModal">Update</button>
