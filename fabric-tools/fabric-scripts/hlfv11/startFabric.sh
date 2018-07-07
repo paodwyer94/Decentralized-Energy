@@ -48,7 +48,7 @@ else
 fi
 
 ARCH=$ARCH docker-compose -f "${DOCKER_FILE}" stop
-ARCH=$ARCH docker-compose -f "${DOCKER_FILE}" start
+ARCH=$ARCH docker-compose -f "${DOCKER_FILE}" up -d
 
 # wait for Hyperledger Fabric to start
 # incase of errors when running later commands, issue export FABRIC_START_TIMEOUT=<larger number>
