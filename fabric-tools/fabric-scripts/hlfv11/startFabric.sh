@@ -47,8 +47,8 @@ else
     DOCKER_FILE="${DIR}"/composer/docker-compose.yml
 fi
 
-ARCH=$ARCH docker-compose -f "${DOCKER_FILE}" down
-ARCH=$ARCH docker-compose -f "${DOCKER_FILE}" up -d
+ARCH=$ARCH docker-compose -f "${DOCKER_FILE}" stop
+ARCH=$ARCH docker-compose -f "${DOCKER_FILE}" start
 
 # wait for Hyperledger Fabric to start
 # incase of errors when running later commands, issue export FABRIC_START_TIMEOUT=<larger number>
